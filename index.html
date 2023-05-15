@@ -18,42 +18,49 @@
 		<title>Alex Chen</title>
 	</head>
 	<body>
-		<header>
-			<div class="navbar">
-				<div class="logo">
-					<a href="#">A | C</a>
+		<section id="header">
+			<header>
+				<div class="navbar">
+					<div class="logo">
+						<a href="#">A | C</a>
+					</div>
+					<ul class="links">
+						<li><a href>About</a></li>
+						<li><a href>Skills</a></li>
+						<li><a href>Projects</a></li>
+						<li><a href>Contact</a></li>
+					</ul>
+					<div class="toggle-btn">
+						<i class="fa-solid fa-bars"></i>
+					</div>
 				</div>
-				<ul class="links">
+				<div class="drop-menu">
 					<li><a href>About</a></li>
 					<li><a href>Skills</a></li>
 					<li><a href>Projects</a></li>
 					<li><a href>Contact</a></li>
-				</ul>
-				<div class="toggle-btn">
-					<i class="fa-solid fa-bars"></i>
 				</div>
-			</div>
-			<div class="drop-menu">
-				<li><a href>About</a></li>
-				<li><a href>Skills</a></li>
-				<li><a href>Projects</a></li>
-				<li><a href>Contact</a></li>
-			</div>
-		</header>
+			</header>
 
-		<script>
-			const toggleBtn = document.querySelector('.toggle-btn');
-			const toggleBtnIcon = document.querySelector('.toggle-btn i');
-			const dropDownMenu = document.querySelector('.drop-menu');
+			<script>
+				const toggleBtn = document.querySelector('.toggle-btn');
+				const toggleBtnIcon = document.querySelector('.toggle-btn i');
+				const dropDownMenu = document.querySelector('.drop-menu');
 
-			toggleBtn.onclick = function () {
-				dropDownMenu.classList.toggle('open');
-				const isOpen = dropDownMenu.classList.contains('open');
+				toggleBtn.onclick = function () {
+					dropDownMenu.classList.toggle('open');
+					const isOpen = dropDownMenu.classList.contains('open');
 
-				toggleBtnIcon.classList = isOpen
-					? 'fa-solid fa-xmark'
-					: 'fa-solid fa-bars';
-			};
-		</script>
+					toggleBtnIcon.classList = isOpen
+						? 'fa-solid fa-xmark'
+						: 'fa-solid fa-bars';
+				};
+			</script>
+		</section>
+		<section id="hero"></section>
+		<section id="skills"></section>
+		<section id="project"></section>
+		<section id="contact"></section>
+		<section id="footer"></section>
 	</body>
 </html>
