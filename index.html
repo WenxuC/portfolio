@@ -20,7 +20,9 @@
 	<body>
 		<header>
 			<div class="navbar">
-				<div class="logo"><a href="#">Alex Chen</a></div>
+				<div class="logo">
+					<a href="#">A | C</a>
+				</div>
 				<ul class="links">
 					<li><a href>About</a></li>
 					<li><a href>Skills</a></li>
@@ -28,9 +30,30 @@
 					<li><a href>Contact</a></li>
 				</ul>
 				<div class="toggle-btn">
-					<i class="fa solid fa-bars"></i>
+					<i class="fa-solid fa-bars"></i>
 				</div>
 			</div>
+			<div class="drop-menu">
+				<li><a href>About</a></li>
+				<li><a href>Skills</a></li>
+				<li><a href>Projects</a></li>
+				<li><a href>Contact</a></li>
+			</div>
 		</header>
+
+		<script>
+			const toggleBtn = document.querySelector('.toggle-btn');
+			const toggleBtnIcon = document.querySelector('.toggle-btn i');
+			const dropDownMenu = document.querySelector('.drop-menu');
+
+			toggleBtn.onclick = function () {
+				dropDownMenu.classList.toggle('open');
+				const isOpen = dropDownMenu.classList.contains('open');
+
+				toggleBtnIcon.classList = isOpen
+					? 'fa-solid fa-xmark'
+					: 'fa-solid fa-bars';
+			};
+		</script>
 	</body>
 </html>

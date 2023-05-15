@@ -53,8 +53,41 @@ header {
 	font-size: 1.5rem;
 	cursor: pointer;
 	display: none;
+	margin-left: 5px;
 }
 
+/* Drop Menu */
+.drop-menu {
+	position: absolute;
+	right: 2rem;
+	top: 60px;
+	height: 0;
+	width: 200px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 5px;
+	overflow: hidden;
+	transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.drop-menu li {
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.drop-menu li a {
+	color: white;
+}
+
+.drop-menu li:hover {
+	background-color: #576cbc;
+	border-radius: 5px;
+}
+
+.drop-menu.open {
+	height: 180px;
+}
 /* Responsive Navbar */
 @media (max-width: 992px) {
 	.navbar .links {
@@ -62,5 +95,18 @@ header {
 	}
 	.navbar .toggle-btn {
 		display: block;
+	}
+}
+
+@media (max-width: 576px) {
+	.drop-menu {
+		left: 2rem;
+		width: unset;
+	}
+}
+
+@media (min-width: 944px) {
+	.drop-menu.open {
+		height: 0;
 	}
 }
