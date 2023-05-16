@@ -22,7 +22,7 @@
 			<header>
 				<div class="navbar">
 					<div class="logo">
-						<a href="#">A | C</a>
+						<a href="#header">A | C</a>
 					</div>
 					<ul class="links">
 						<li><a href="#about">About</a></li>
@@ -41,8 +41,11 @@
 					<li><a href="#contact">Contact</a></li>
 				</div>
 			</header>
-
 			<script>
+				window.addEventListener("scroll", function(){
+					var header = document.querySelector(".navbar");
+					header.classList.toggle("sticky", window.scrollY > 0)
+				})
 				const toggleBtn = document.querySelector('.toggle-btn');
 				const toggleBtnIcon = document.querySelector('.toggle-btn i');
 				const dropDownMenu = document.querySelector('.drop-menu');
