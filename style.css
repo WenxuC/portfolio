@@ -108,6 +108,9 @@ header {
 	line-height: 1.2;
 }
 
+.hero-content b {
+	color: #a5d7e8;
+}
 .hero-content h3 {
 	font-size: 32px;
 	font-weight: 700;
