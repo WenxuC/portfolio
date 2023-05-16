@@ -32,7 +32,6 @@ header {
 .navbar {
 	width: 100%;
 	height: 60px;
-	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -59,6 +58,7 @@ header {
 /* Drop Menu */
 .drop-menu {
 	position: absolute;
+	display: block;
 	right: 2rem;
 	top: 60px;
 	height: 0;
@@ -88,6 +88,117 @@ header {
 .drop-menu.open {
 	height: 180px;
 }
+
+/* Hero Section */
+#hero {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	padding: 0 10%;
+}
+
+.hero-content {
+	display: block;
+	max-width: 600px;
+}
+
+.hero-content h1 {
+	font-size: 58px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.hero-content h3 {
+	font-size: 32px;
+	font-weight: 700;
+	color: #a5d7e8;
+}
+
+.hero-content p {
+	font-size: 16px;
+	margin: 20px 0 40px;
+}
+
+.hero-content .btn-box {
+	width: 345px;
+	height: 50px;
+}
+
+.btn-box a {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 100%;
+	background: #a5d7e8;
+	border: 2px solid #0b2447;
+	border-radius: 8px;
+	font-size: 19px;
+	color: #0b2447;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 1px;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.btn-box a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50;
+	width: 0;
+	height: 100%;
+	border-radius: 10px;
+	background: white;
+	z-index: -1;
+	transition: 0.3s;
+}
+
+.btn-box a:hover::before {
+	width: 100%;
+}
+
+.hero-social {
+	position: absolute;
+	display: flex;
+	margin-top: 20px;
+	padding: 0;
+	width: 160px;
+	justify-content: space-between;
+}
+
+.hero-social a {
+	position: relative;
+	display: inline-flex;
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	border: 2px solid #0b2447;
+	font-size: 25px;
+	color: #0b2447;
+	text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+#about {
+	height: 100%;
+}
+
+#skills {
+	height: 100%;
+}
+
+#projects {
+	height: 100%;
+}
+
+#contact {
+	height: 100%;
+}
 /* Responsive Navbar */
 @media (max-width: 992px) {
 	.navbar .links {
@@ -105,6 +216,12 @@ header {
 	}
 }
 
+@media (max-height: 814px) {
+	#hero {
+		display: block;
+		padding: 200px 10%;
+	}
+}
 @media (min-width: 944px) {
 	.drop-menu.open {
 		height: 0;
