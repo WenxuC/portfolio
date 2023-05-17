@@ -21,7 +21,7 @@
 		<div class="scroll-container">
 			<section id="header">
 				<header>
-					<div class="navbar">
+					<div class="navbar sticky">
 						<div class="logo">
 							<a href="#header">A | C</a>
 						</div>
@@ -43,10 +43,10 @@
 					</div>
 				</header>
 				<script>
-					window.addEventListener("scroll", function(){
-						var navbar = document.querySelector(".navbar");
-						navbar.classList.toggle("sticky", window.scrollBy > 0)
-					})
+					// window.addEventListener("scroll", function(){
+					// 	var navbar = document.querySelector(".navbar");
+					// 	navbar.classList.toggle("sticky", window.scrollBy > 0)
+					// })
 					const toggleBtn = document.querySelector('.toggle-btn');
 					const toggleBtnIcon = document.querySelector('.toggle-btn i');
 					const dropDownMenu = document.querySelector('.drop-menu');
@@ -64,7 +64,7 @@
 			
 				<section class="scroll-area" id="hero">
 					<div class="hero-content">
-						<h1>Hello, I'm Alex Chen</h1>
+						<h1>Hello, I'm Alex Chen.</h1>
 						<h3>Father<b>.</b> Husband<b>.</b> Software Engineer<b>.</b></b></h3>
 						<p>
 							As a <b>software engineer</b>, my goal is to use technology to make the world
@@ -73,7 +73,7 @@
 							<b>positive</b> impact on the world.
 						</p>
 						<div class="btn-box">
-							<a href="#">Contact Me</a>
+							<a href="#contact">Contact Me</a>
 						</div>
 						<div class="hero-social">
 							<a href="#"><i class="fa-brands fa-linkedin"></i></a>
@@ -82,12 +82,21 @@
 						</div>
 					</div>
 				</section>
-				<section class="scroll-area" id="about"><h1>About</h1></section>
-				<section class="scroll-area" id="skills"><h1>Skills</h1></section>
+				<section class="scroll-area" id="about">
+					<div class="about-content">
+						<h1>About Me.</h1>
+						<p>I've had a natural curiosity for how things work. I would take apart anything I could get my hands on, and then try to put it back together. As I grew older, my passion for problem-solving led me to pursue a degree in computer science from Queens College. </p>
+						<p>Through my experiences, I discovered my passion for developing innovative solutions that can make a difference in people’s lives. I am motivated to use my skills in software engineering to create new technologies that can improve society and make a positive impact.</p>
+						<p>I am excited to apply my knowledge and skills to a role that challenges me to grow and learn more every day.</p>
+					</div>	
+					
+				</section>
+				<section class="scroll-area" id="skills"><h1>Skills</h1>			
+				</section>
 				<section class="scroll-area" id="projects"><h1>Projects</h1></section>
 				<section class="scroll-area" id="contact"><h1>Contact</h1></section>
 			</div>
-				<section id="footer"></section>
+				<section id="footer"><h1>Footer</h1></section>
 		
 	</body>
 </html>
