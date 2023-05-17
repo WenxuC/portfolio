@@ -123,9 +123,9 @@ header {
 /* Scroll Container */
 .scroll-container {
 	height: 100vh;
-	scroll-snap-type: y mandatory;
+	/* scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
-	overflow-y: scroll;
+	overflow-y: scroll; */
 }
 
 .scroll-area {
@@ -136,7 +136,7 @@ header {
 #about,
 #skills,
 #projects,
-#contacts {
+#contact {
 	display: flex;
 	height: 100%;
 	align-items: center;
@@ -236,6 +236,7 @@ h1 {
 #about {
 	justify-content: right;
 }
+
 .about-content h1 {
 	text-align: left;
 	color: #a5d7e8;
@@ -249,14 +250,8 @@ h1 {
 	line-height: 1.5;
 }
 
-.about-image {
-	display: inline-block;
-	width: 900px;
-}
-.about-image img {
-	max-width: 400px;
-}
 #skills {
+	justify-content: left;
 	max-width: 100%;
 }
 
@@ -266,6 +261,12 @@ h1 {
 }
 
 #contact {
+	max-width: 100%;
+	justify-content: left;
+}
+
+#footer {
+	position: fixed;
 }
 /* Responsive Navbar */
 @media (max-width: 992px) {
