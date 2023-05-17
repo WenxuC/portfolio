@@ -96,8 +96,7 @@ header {
 	height: 0;
 	width: 200px;
 	background-color: #19376d;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+	border-radius: 10px;
 	overflow: hidden;
 	transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -121,7 +120,17 @@ header {
 .drop-menu.open {
 	height: 180px;
 }
+/* Scroll Container */
+.scroll-container {
+	height: 100vh;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+}
 
+.scroll-area {
+	scroll-snap-align: start;
+}
 /* Hero Section */
 #hero {
 	display: flex;
@@ -180,7 +189,6 @@ header {
 	font-weight: 600;
 	letter-spacing: 1px;
 	z-index: 1;
-	overflow: hidden;
 }
 
 .btn-box a::before {
@@ -201,7 +209,6 @@ header {
 }
 
 .hero-social {
-	position: absolute;
 	display: flex;
 	margin-top: 20px;
 	padding: 0;
@@ -221,9 +228,6 @@ header {
 	text-decoration: none;
 }
 
-html {
-	scroll-behavior: smooth;
-}
 #about {
 	display: flex;
 	height: 100%;

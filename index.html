@@ -18,72 +18,76 @@
 		<title>Alex Chen</title>
 	</head>
 	<body>
-		<section id="header">
-			<header>
-				<div class="navbar">
-					<div class="logo">
-						<a href="#header">A | C</a>
+		<div class="scroll-container">
+			<section id="header">
+				<header>
+					<div class="navbar">
+						<div class="logo">
+							<a href="#header">A | C</a>
+						</div>
+						<ul class="links">
+							<li><a href="#about">About</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+						<div class="toggle-btn">
+							<i class="fa-solid fa-bars"></i>
+						</div>
 					</div>
-					<ul class="links">
+					<div class="drop-menu">
 						<li><a href="#about">About</a></li>
 						<li><a href="#skills">Skills</a></li>
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#contact">Contact</a></li>
-					</ul>
-					<div class="toggle-btn">
-						<i class="fa-solid fa-bars"></i>
 					</div>
-				</div>
-				<div class="drop-menu">
-					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</div>
-			</header>
-			<script>
-				window.addEventListener("scroll", function(){
-					var header = document.querySelector(".navbar");
-					header.classList.toggle("sticky", window.scrollY > 0)
-				})
-				const toggleBtn = document.querySelector('.toggle-btn');
-				const toggleBtnIcon = document.querySelector('.toggle-btn i');
-				const dropDownMenu = document.querySelector('.drop-menu');
+				</header>
+				<script>
+					window.addEventListener("scroll", function(){
+						var navbar = document.querySelector(".navbar");
+						navbar.classList.toggle("sticky", window.scrollBy > 0)
+					})
+					const toggleBtn = document.querySelector('.toggle-btn');
+					const toggleBtnIcon = document.querySelector('.toggle-btn i');
+					const dropDownMenu = document.querySelector('.drop-menu');
 
-				toggleBtn.onclick = function () {
-					dropDownMenu.classList.toggle('open');
-					const isOpen = dropDownMenu.classList.contains('open');
+					toggleBtn.onclick = function () {
+						dropDownMenu.classList.toggle('open');
+						const isOpen = dropDownMenu.classList.contains('open');
 
-					toggleBtnIcon.classList = isOpen
-						? 'fa-solid fa-xmark'
-						: 'fa-solid fa-bars';
-				};
-			</script>
-		</section>
-		<section id="hero">
-			<div class="hero-content">
-				<h1>Hello, I'm Alex Chen</h1>
-				<h3>Father<b>.</b> Husband<b>.</b> Software Engineer<b>.</b></b></h3>
-				<p>
-					As a <b>software engineer</b>, my goal is to use technology to make the world
-					a better place for my <b>child</b> and future generations. Through my work, I
-					strive to create innovative solutions that improve lives and leave a
-					<b>positive</b> impact on the world.
-				</p>
-				<div class="btn-box">
-					<a href="#">Contact Me</a>
-				</div>
-				<div class="hero-social">
-					<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-					<a href="#"><i class="fa-brands fa-github"></i></a>
-					<a href="#"><i class="fa-solid fa-file"></i></a>
-				</div>
+						toggleBtnIcon.classList = isOpen
+							? 'fa-solid fa-xmark'
+							: 'fa-solid fa-bars';
+					};
+				</script>
+			</section>
+			
+				<section class="scroll-area" id="hero">
+					<div class="hero-content">
+						<h1>Hello, I'm Alex Chen</h1>
+						<h3>Father<b>.</b> Husband<b>.</b> Software Engineer<b>.</b></b></h3>
+						<p>
+							As a <b>software engineer</b>, my goal is to use technology to make the world
+							a better place for my <b>child</b> and future generations. Through my work, I
+							strive to create innovative solutions that improve lives and leave a
+							<b>positive</b> impact on the world.
+						</p>
+						<div class="btn-box">
+							<a href="#">Contact Me</a>
+						</div>
+						<div class="hero-social">
+							<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+							<a href="#"><i class="fa-brands fa-github"></i></a>
+							<a href="#"><i class="fa-solid fa-file"></i></a>
+						</div>
+					</div>
+				</section>
+				<section class="scroll-area" id="about"><h1>About</h1></section>
+				<section class="scroll-area" id="skills"><h1>Skills</h1></section>
+				<section class="scroll-area" id="projects"><h1>Projects</h1></section>
+				<section class="scroll-area" id="contact"><h1>Contact</h1></section>
 			</div>
-		</section>
-		<section id="about"><h1>About</h1></section>
-		<section id="skills"><h1>Skills</h1></section>
-		<section id="projects"><h1>Projects</h1></section>
-		<section id="contact"><h1>Contact</h1></section>
-		<section id="footer"></section>
+				<section id="footer"></section>
+		
 	</body>
 </html>
