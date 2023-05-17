@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	color: white;
-	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -25,24 +25,55 @@ a:hover {
 }
 
 header {
-	position: relative;
-	padding: 0 2rem;
+	position: fixed;
+	padding: 30px 100%;
+	z-index: 100000;
 }
 
+.navbar.sticky {
+	background: #19376d;
+}
 .navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 60px;
-	margin: 0 auto;
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	z-index: 100000;
 }
 
 .navbar .logo a {
-	font-size: 1.5rem;
+	position: relative;
+	margin-left: 30px;
+	font-size: 2em;
+	text-transform: uppercase;
 	font-weight: bold;
+	letter-spacing: 2px;
+	transform: 0.6s;
 }
 
+.navbar ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 30px;
+}
+
+.navbar ul li {
+	position: relative;
+	list-style: none;
+}
+
+.navbar ul li a {
+	position: relative;
+	letter-spacing: 0.5px;
+	font-weight: 500px;
+}
 .navbar .links {
 	display: flex;
 	gap: 2rem;
@@ -53,18 +84,19 @@ header {
 	cursor: pointer;
 	display: none;
 	margin-left: 5px;
+	margin-right: 30px;
 }
 
 /* Drop Menu */
 .drop-menu {
-	position: absolute;
+	position: fixed;
 	display: block;
 	right: 2rem;
 	top: 60px;
 	height: 0;
 	width: 200px;
-	background: rgba(255, 255, 255, 0.1);
-	border-radius: 5px;
+	background-color: #19376d;
+	border-radius: 10px;
 	overflow: hidden;
 	transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -88,7 +120,17 @@ header {
 .drop-menu.open {
 	height: 180px;
 }
+/* Scroll Container */
+.scroll-container {
+	height: 100vh;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+}
 
+.scroll-area {
+	scroll-snap-align: start;
+}
 /* Hero Section */
 #hero {
 	display: flex;
@@ -147,7 +189,6 @@ header {
 	font-weight: 600;
 	letter-spacing: 1px;
 	z-index: 1;
-	overflow: hidden;
 }
 
 .btn-box a::before {
@@ -168,7 +209,6 @@ header {
 }
 
 .hero-social {
-	position: absolute;
 	display: flex;
 	margin-top: 20px;
 	padding: 0;
@@ -188,23 +228,32 @@ header {
 	text-decoration: none;
 }
 
-html {
-	scroll-behavior: smooth;
-}
 #about {
+	display: flex;
 	height: 100%;
+	align-items: center;
+	justify-content: center;
 }
 
 #skills {
+	display: flex;
 	height: 100%;
+	align-items: center;
+	justify-content: center;
 }
 
 #projects {
+	display: flex;
 	height: 100%;
+	align-items: center;
+	justify-content: center;
 }
 
 #contact {
+	display: flex;
 	height: 100%;
+	align-items: center;
+	justify-content: center;
 }
 /* Responsive Navbar */
 @media (max-width: 992px) {
@@ -229,7 +278,7 @@ html {
 		padding: 200px 10%;
 	}
 }
-@media (min-width: 944px) {
+@media (min-width: 999px) {
 	.drop-menu.open {
 		height: 0;
 	}
