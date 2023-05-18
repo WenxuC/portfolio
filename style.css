@@ -123,9 +123,9 @@ header {
 /* Scroll Container */
 .scroll-container {
 	height: 100vh;
-	/* scroll-snap-type: y mandatory;
+	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
-	overflow-y: scroll; */
+	overflow-y: scroll;
 }
 
 .scroll-area {
@@ -185,6 +185,7 @@ h1 {
 	align-items: center;
 	width: 150px;
 	height: 100%;
+	margin-right: 20px;
 	background: #a5d7e8;
 	border: 2px solid #0b2447;
 	border-radius: 8px;
@@ -226,9 +227,10 @@ h1 {
 	display: inline-flex;
 	width: 30px;
 	height: 30px;
+	margin-top: 20px;
 	background: transparent;
 	border: 2px solid #0b2447;
-	font-size: 25px;
+	font-size: 40px;
 	color: #0b2447;
 	text-decoration: none;
 }
@@ -254,7 +256,45 @@ h1 {
 	justify-content: left;
 	max-width: 100%;
 }
+#skills .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: center;
+	width: 800px;
+	height: 100%;
+}
+#skills .container .title {
+	margin-top: 60%;
+	margin-left: 20%;
+	text-align: left;
+	width: 100%;
+}
 
+#skills .container .title h1 {
+	color: #a5d7e8;
+	line-height: 1.5;
+}
+
+#skills .container .skill-icon {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin: 30px;
+	font-size: 40px;
+	text-align: center;
+}
+
+#skills .container .skill-icon i {
+	text-align: center;
+	margin: 20px;
+	color: #a5d7e8;
+}
+
+#skills .container .skill-icon i p {
+	font-size: 2rem;
+	font-style: italic;
+}
 #projects {
 	max-width: 100%;
 	justify-content: right;
@@ -294,5 +334,23 @@ h1 {
 @media (min-width: 999px) {
 	.drop-menu.open {
 		height: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	#skills .container .skill-icon {
+		grid-template-columns: 1fr 1fr;
+	}
+	#skills .container .title {
+		text-align: left;
+	}
+}
+
+@media (max-width: 480px) {
+	#skills .container .skill-icon {
+		grid-template-columns: 1fr;
+	}
+	#skills .container .title {
+		text-align: left;
 	}
 }
