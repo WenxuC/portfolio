@@ -17,15 +17,16 @@
 		></script>
 		<title>Alex Chen</title>
 	</head>
+
 	<body>
 		<div class="scroll-container">
-			<section id="header">
+			<section class="scroll-area" id="navbar">
 				<header>
-					<div class="navbar sticky">
+					<div class="navbar">
 						<div class="logo">
-							<a href="#header">A | C</a>
+							<a href="#navbar">A | C</a>
 						</div>
-						<ul class="links">
+						<ul class="nav-links">
 							<li><a href="#about">About</a></li>
 							<li><a href="#skills">Skills</a></li>
 							<li><a href="#projects">Projects</a></li>
@@ -61,60 +62,95 @@
 					};
 				</script>
 			</section>
-			
-				<section class="scroll-area" id="hero">
-					<div class="hero-content">
+			<section class="scroll-area" id="hero">
+				<div class="hero-container">
+					<div class="title">
 						<h1>Hello, I'm Alex Chen.</h1>
+					</div>
+					<div class="subtitle">
 						<h3>Father<b>.</b> Husband<b>.</b> Software Engineer<b>.</b></b></h3>
+					</div>
+					<div class="intro">
 						<p>
 							As a <b>software engineer</b>, my goal is to use technology to make the world
 							a better place for my <b>child</b> and future generations. Through my work, I
 							strive to create innovative solutions that improve lives and leave a
 							<b>positive</b> impact on the world.
 						</p>
-						<div class="btn-box">
-							<a href="#contact">Contact Me</a>
-							<a href="#resume">Resume</a>
-						</div>
-						<div class="hero-social">
-							<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-							<a href="#"><i class="fa-brands fa-github"></i></a>
-							<a href="#"><i class="fa-solid fa-file"></i></a>
-						</div>
-					</div>
-				</section>
-				<section class="scroll-area" id="about">
-					<div class="about-content">
-						<h1>About Me.</h1>
-						<p>I've had a natural curiosity for how things work. I would take apart anything I could get my hands on, and then try to put it back together. As I grew older, my passion for problem-solving led me to pursue a degree in computer science from Queens College. </p>
-						<p>Through my experiences, I discovered my passion for developing innovative solutions that can make a difference in people’s lives. I am motivated to use my skills in software engineering to create new technologies that can improve society and make a positive impact.</p>
-						<p>I am excited to apply my knowledge and skills to a role that challenges me to grow and learn more every day.</p>
-					</div>	
-					
-				</section>
-				<section class="scroll-area" id="skills">
-					<div class="container">
-						<div class="title">
-							<h1>Skills</h1>
-							<h3>Experiences in the following.</h3>
-						</div>
-						<div class="skill-icon">
-							<i class="fa-brands fa-react"><p>React</p></i>
-							<i class="fa-brands fa-square-js"><p>JavaScript</p></i>
-							<i class="fa-brands fa-python"><p>Python</p></i>
-							<i class="fa-brands fa-html5"><p>HTML5</p></i>
-							<i class="fa-brands fa-css3-alt"><p>CSS3</p></i>
-							<i class="fa-brands fa-node"><p>Node</p></i>
-							<i class="fa-brands fa-git"><p>Git</p></i>
-							<i class="fa-brands fa-aws"><p>AWS EC2</p></i>
-						</div>	
 				</div>
-				</section>
-				<section class="scroll-area" id="projects">					
-				</section>
-				<section class="scroll-area" id="contact"><h1>Contact</h1></section>
-			</div>
-				<section id="footer"><h1>Footer</h1></section>
-		
+				<div class="btn-box">
+					<a href="#contact">Contact Me</a>
+					<a href="#resume">Resume</a>
+				</div>
+				<div class="hero-social">
+					<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="#"><i class="fa-brands fa-github"></i></a>
+					<a href="#"><i class="fa-solid fa-file"></i></a>
+				</div>
+				</div>
+			</section>
+			<section class="scroll-area" id="about">
+				<div class="about-container">
+					<div class="content">
+						<h1>About Me.</h1>
+						<p>I've had a natural curiosity for how things work. I would take apart anything I could get my hands on, and then try to put it back together. As I grew older, my passion for problem-solving led me to pursue a degree in computer science from Queens College.</p><br>
+						<p>Through my experiences, I discovered my passion for developing innovative solutions that can make a difference in people’s lives. I am motivated to use my skills in software engineering to create new technologies that can improve society and make a positive impact.</p><br>
+						<p>I am excited to apply my knowledge and skills to a role that challenges me to grow and learn more every day.</p>
+					</div>
+				</div>	
+			</section>
+			<section class="scroll-area" id="skills">
+				<div class="skill-container">
+					<div class="title">
+						<h1>Skills</h1>
+						<h3>Experiences in the following.</h3>
+					</div>
+					<div class="skill-icon">
+						<i class="fa-brands fa-react"><p>React</p></i>
+						<i class="fa-brands fa-square-js"><p>JavaScript</p></i>
+						<i class="fa-brands fa-python"><p>Python</p></i>
+						<i class="fa-brands fa-html5"><p>HTML5</p></i>
+						<i class="fa-brands fa-css3-alt"><p>CSS3</p></i>
+						<i class="fa-brands fa-node"><p>Node</p></i>
+						<i class="fa-brands fa-git"><p>Git</p></i>
+						<i class="fa-brands fa-aws"><p>AWS EC2</p></i>
+					</div>	
+				</div>
+			</section>
+			<section class="scroll-area" id="projects">
+				<div class="container">
+					<h1>Projects</h1>
+					<div class="project-container">
+						<div class="project-box">
+							<img src="/images/mise-en-place.gif" alt="miseenplace">
+								<div class="project-layer">
+									<h4>Mise En Place</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores repudiandae minus perferendis quasi reiciendis voluptates debitis, ullam odit maxime nemo libero laborum tempore laudantium, eius animi saepe! Nobis, corrupti!</p>
+									<a href="#"><i class="fa-solid fa-link"></i></a>
+									<i class="fa-solid fa-code"></i>
+								</div>
+						</div>
+						<div class="project-box">
+							<img src="/images/mise-en-place.gif" alt="miseenplace">
+								<div class="project-layer">
+									<h4>Mise En Place</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores repudiandae minus perferendis quasi reiciendis voluptates debitis, ullam odit maxime nemo libero laborum tempore laudantium, eius animi saepe! Nobis, corrupti!</p>
+									<a href="#"><i class="fa-solid fa-link"></i></a>
+									<i class="fa-solid fa-code"></i>
+								</div>
+						</div>
+						<div class="project-box">
+							<img src="/images/mise-en-place.gif" alt="miseenplace">
+							<div class="project-layer">
+								<h4>Mise En Place</h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores repudiandae minus perferendis quasi reiciendis voluptates debitis, ullam odit maxime nemo libero laborum tempore laudantium, eius animi saepe! Nobis, corrupti!</p>
+								<a href="#"><i class="fa-solid fa-link"></i></a>
+								<i class="fa-solid fa-code"></i>
+							</div>
+					</div>
+					</div>
+				</div>
+			</section>
+		</div>
 	</body>
 </html>
