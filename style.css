@@ -219,6 +219,9 @@ h1 {
 	text-decoration: none;
 }
 /* About */
+#about {
+	background-color: #a5d7e8;
+}
 .about-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -226,15 +229,17 @@ h1 {
 	justify-content: right;
 }
 
-.about-container .title {
-	width: 100%;
-	text-align: center;
-}
 .about-container .content {
 	max-width: 60ch;
 }
 
+.about-container .content h1 {
+	color: #0b2447;
+	max-width: 60ch;
+}
+
 .about-container .content p {
+	color: black;
 	margin-top: 10px;
 	font-size: 25px;
 }
