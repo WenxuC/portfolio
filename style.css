@@ -39,9 +39,9 @@ h1 {
 
 .scroll-container {
 	height: 100vh;
-	/* scroll-snap-type: y mandatory;
+	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
-	overflow-y: scroll; */
+	overflow-y: scroll;
 }
 
 /* Navbar */
@@ -126,7 +126,8 @@ h1 {
 #hero,
 #about,
 #skills,
-#projects {
+#projects,
+#contact {
 	display: flex;
 	min-height: 100vh;
 	align-items: center;
@@ -272,6 +273,8 @@ h1 {
 /* Projects */
 #projects {
 	background-color: #a5d7e8;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
 }
 #projects .container {
 	display: flex;
@@ -293,23 +296,31 @@ h1 {
 }
 
 .project-box img {
-	border-radius: 10px;
 	width: 100%;
 	height: auto;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 .project-box {
 	justify-content: center;
+	background-color: aliceblue;
+	box-shadow: 3px 3px 2px lightgray;
+	border: 2px black black;
+	border-radius: 10px;
 }
 
 .project-box p {
 	color: black;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
+	padding: 10px;
+	padding-top: 0px;
 }
 
 .project-box .title-box {
 	display: grid;
 	grid-template-columns: 70% 15% 15%;
 	margin-top: 20px;
+	padding: 10px;
 }
 
 .project-box .title-box h4 {
@@ -322,8 +333,6 @@ h1 {
 	display: flex;
 	justify-content: center;
 	color: #0b2447;
-
-	font-size: 15px;
 }
 @media (max-width: 992px) {
 	.navbar .nav-links {
