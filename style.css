@@ -28,6 +28,8 @@ header {
 }
 
 h1 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
 	font-size: 70px;
 	font-weight: 700;
 	line-height: 1.2;
@@ -120,7 +122,7 @@ h1 {
 }
 
 .drop-menu.open {
-	height: 180px;
+	height: 220px;
 }
 
 #hero,
@@ -143,6 +145,10 @@ h1 {
 	flex-direction: column;
 }
 
+.hero-container h1 {
+	letter-spacing: 0px;
+	text-transform: capitalize;
+}
 .hero-container b {
 	color: #a5d7e8;
 }
@@ -304,7 +310,7 @@ h1 {
 .project-box {
 	justify-content: center;
 	background-color: aliceblue;
-	box-shadow: 3px 3px 2px lightgray;
+	box-shadow: 6px 5px 5px black;
 	border: 2px black black;
 	border-radius: 10px;
 }
@@ -333,6 +339,54 @@ h1 {
 	display: flex;
 	justify-content: center;
 	color: #0b2447;
+}
+
+/* Contact */
+#contact {
+	justify-content: center;
+}
+
+.contact-container {
+	display: flex;
+	justify-content: center;
+	background-color: #19376d;
+	border-radius: 10px;
+	box-shadow: 6px 5px 5px black;
+	padding: 40px;
+	padding-left: 60px;
+}
+
+.contact-container .content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.contact-container h1,
+h2,
+h3 {
+	width: 100%;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.contact-container h2 {
+	letter-spacing: 5px;
+	color: #a5d7e8;
+}
+.contact-container h3 {
+	text-transform: none;
+	font-size: 1rem;
+	margin-bottom: 2rem;
+	font-weight: 100;
+}
+
+hr {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.contact-container .content .link-icon a {
+	margin: 0;
+	border: none;
 }
 @media (max-width: 992px) {
 	.navbar .nav-links {
