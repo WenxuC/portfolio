@@ -126,7 +126,8 @@ h1 {
 #hero,
 #about,
 #skills,
-#projects {
+#projects,
+#contact {
 	display: flex;
 	min-height: 100vh;
 	align-items: center;
@@ -270,6 +271,11 @@ h1 {
 	font-style: italic;
 }
 /* Projects */
+#projects {
+	background-color: #a5d7e8;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
 #projects .container {
 	display: flex;
 	width: 100%;
@@ -278,6 +284,7 @@ h1 {
 #projects .container h1 {
 	text-align: center;
 	margin-bottom: 30px;
+	color: #0b2447;
 }
 .project-container {
 	display: grid;
@@ -289,13 +296,44 @@ h1 {
 }
 
 .project-box img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 .project-box {
 	justify-content: center;
+	background-color: aliceblue;
+	box-shadow: 3px 3px 2px lightgray;
+	border: 2px black black;
+	border-radius: 10px;
 }
 
+.project-box p {
+	color: black;
+	margin-bottom: 5px;
+	padding: 10px;
+	padding-top: 0px;
+}
+
+.project-box .title-box {
+	display: grid;
+	grid-template-columns: 70% 15% 15%;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.project-box .title-box h4 {
+	color: #0b2447;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.project-box .title-box a {
+	display: flex;
+	justify-content: center;
+	color: #0b2447;
+}
 @media (max-width: 992px) {
 	.navbar .nav-links {
 		display: none;
